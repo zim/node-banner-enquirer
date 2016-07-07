@@ -10,10 +10,11 @@ var copy = require('directory-copy');
 
 
 //  SET GLOBAL VRIABLES
+// change here testgit ch
 //var platform;
 //var template;
 //var folder;
-//var client;
+
 
 var answersEnd = [];
 
@@ -97,7 +98,7 @@ fs.readdir('./lib', function (err, files) {
                 throw err;
             }
 
-            console.log('FILES ++++++AGAINNNNN++++=== ' + files);
+            
             
          files.forEach(function (fileName) {
         //            var file = path.join(__dirname, "lib", fileName);
