@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>billboard</title>
+    <script>
+        function initEB(){
+            if (!EB.isInitialized()) {
+                EB.addEventListener(EBG.EventName.EB_INITIALIZED, init);
+            }else {
+                init();
+            }
+        }
+    </script>
+			
+</head>
+
+
+
+<body onload="initEB()">
+	<div id="stage">
+        <div id="openBtn" class="button">open</div>
+        <div id="closeBtn" class="button">close</div>
+        <button id="clickthroughBtn" onClick="EB.clickthrough()">clickthrough</button>
+	</div>
+</body>
+</html>

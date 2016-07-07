@@ -1,0 +1,57 @@
+html{
+	margin:0px;	
+	padding:0px;
+}
+
+body{
+	margin:inherit;
+	padding:inherit;
+	overflow:hidden;
+}
+
+#bannerContainer {
+	position: relative;
+	overflow:inherit;
+	display: block;
+	width:970px;
+	height:250px;
+	background-color:#0069ff;
+	cursor:pointer;
+}
+
+#logo {
+	display: block;
+	position:absolute;
+	width:230px;
+	height:60px;
+	left:20px;
+	bottom:18px;
+	background-size:100% 100%;
+	background-image:url(../images/sizmeklogo.png);
+}
+
+
+
+
+	
+@media all and (max-width : 969px){
+	#bannerContainer{
+		width:728px;
+		height:90px;
+		background-color:#3F0;
+	}
+}
+
+@media all and (max-width : 727px){
+	#bannerContainer{
+		width:320px;
+		height:50px;
+		background-color:#0069ff;
+	}
+	
+	#logo{
+		width:115px;
+		height:30px;
+		bottom:12px;
+	}
+}

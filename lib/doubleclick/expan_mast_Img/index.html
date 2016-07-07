@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta data-template-name="Template_H5T_mhexpanding-970x250-image">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script type="text/javascript" src="https://s0.2mdn.net/ads/studio/Enabler.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/external_hosted/polymer/custom.elements.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/ads/ci/ytclosebutton/1/ytclosebutton_min.js"></script>
+</head>
+<body>
+    <div id="main-container">
+      <!-- Collapsed Conent -->
+      <div id="collapsed-content">
+        <div id="collapsed-exit"></div>
+        <div id="expand-button" class="button">
+          Click To Expand
+        </div>
+        <div class="feature-collapsed" id="feature-collapsed">
+      <div id="main-img-0"></div>
+        </div>
+      </div>
+
+      <!-- Expand Content -->
+      <div id="expanded-content">
+        <div id="expanded-exit"></div>
+        <div id="collapse-button">X Close Expanded</div>
+        <div class="feature-expanded" id="feature-expanded">
+      <div id="main-img-1"></div>
+        </div>
+      </div>
+      <ci-ytclosebutton id="yt-close"></ci-ytclosebutton>
+    </div>
+    <script>
+      Enabler.setExpandingPixelOffsets(0, 0, 970, 500);
+    </script>
+
+  <script src="logic.js"></script>
+</body>
+</html>

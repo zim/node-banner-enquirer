@@ -1,0 +1,17 @@
+{
+  "name": "dev1",
+  "version": "1.0.0",
+  "description": "a system fo banners",
+  "main": "createhtml.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Zim Segal",
+  "license": "ISC",
+  "devDependencies": {
+    "chmodr": "^1.0.2",
+    "inquirer": "^1.0.3",
+    "mkdirp": "^0.5.1",
+    "ncp": "^2.0.0"
+  }
+}

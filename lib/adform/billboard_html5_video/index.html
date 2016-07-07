@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script>EBModulesToLoad = ['Video'];</script>
+	<script  type="text/javascript" src="https://secure-ds.serving-sys.com/BurstingScript/EBLoader.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>billboard</title>
+    
+    <script>
+        function initEB(){
+            if (!EB.isInitialized()) {
+                EB.addEventListener(EBG.EventName.EB_INITIALIZED, init);
+            }else {
+                init();
+            }
+        }
+    </script>
+</head>
+
+
+<body onload="initEB()">
+	<div id="stage">
+        <div id="openBtn" class="button">open</div>
+        <div id="closeBtn" class="button">close</div>
+        <div id="video">
+        	<div id="poster"></div>
+            <video id="player" controls muted>
+            	<source src="videos/video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <button id="clickthroughBtn" onClick="EB.clickthrough()">clickthrough</button>
+	</div>
+</body>
+</html>
